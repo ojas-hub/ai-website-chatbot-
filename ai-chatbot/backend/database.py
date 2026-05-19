@@ -1,6 +1,5 @@
 from sqlalchemy import create_engine, Column, Integer, String, Text, ForeignKey, DateTime
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy.orm import sessionmaker, relationship, declarative_base
 import datetime
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///./chatbot.db"

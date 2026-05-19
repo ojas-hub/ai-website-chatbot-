@@ -238,7 +238,7 @@ function App() {
       <header className="main-header">
         <div className="logo-section">
           <div className="logo-icon"></div>
-          <h1>LuminaChat <span className="badge">Offline AI</span></h1>
+          <h1>Ojas Chat <span className="badge">Offline AI</span></h1>
         </div>
         <nav className="tab-navigation">
           <button 
@@ -478,7 +478,7 @@ function App() {
                               <div key={idx} className={`admin-msg-row ${msg.sender}`}>
                                 <div className="admin-msg-bubble">
                                   <div className="msg-meta">
-                                    <span className="msg-sender">{msg.sender === 'user' ? 'User' : 'LuminaBot'}</span>
+                                    <span className="msg-sender">{msg.sender === 'user' ? 'User' : 'OjasBot'}</span>
                                     <span className="msg-time">{new Date(msg.timestamp).toLocaleTimeString()}</span>
                                   </div>
                                   <p>{msg.text}</p>

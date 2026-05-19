@@ -10,7 +10,7 @@ import database
 from database import SessionLocal, FAQ, Conversation, Message, init_db
 from matcher import FAQMatcher
 
-app = FastAPI(title="Offline AI Chatbot API")
+app = FastAPI(title="Ojas Chat API")
 
 # Configure CORS
 app.add_middleware(
@@ -58,7 +58,7 @@ class FAQSchema(BaseModel):
     category: str = "General"
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class MessageSchema(BaseModel):
     sender: str
